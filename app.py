@@ -21,7 +21,7 @@ def application(environ, start_response):
     if prot_options != -1:
         stream_url = stream_url[:prot_options]
 
-    start_response('307 Temporary Redirect', [('Location',stream_url)])
+    start_response('302 Temporary Redirect', [('Location',stream_url)])
     return [""]    
 
 #    response_headers = [
